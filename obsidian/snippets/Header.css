@@ -1,0 +1,128 @@
+:root {
+    --header-before-size: 0.5rem;
+    --header-before-margin-right: 6px;
+    --header-font-family: "Yuanti SC";
+}
+
+.theme-dark {
+    --h2-color: DarkSalmon;
+    --h3-color: SkyBlue;
+}
+
+.theme-light {
+    --h2-color: DarkOrange;
+    --h3-color: LightSkyBlue;
+}
+
+/*---------------------------------------------------*/
+/*                      标题字体                      */
+/*---------------------------------------------------*/
+
+/* 编辑状态 */
+span.cm-header,
+/* 预览状态 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--header-font-family);
+}
+
+/*---------------------------------------------------*/
+/*                      标题颜色                      */
+/*---------------------------------------------------*/
+
+/* 编辑状态 */
+span.cm-header.cm-header-2,
+/* 预览状态 */
+h2 {
+    color: var(--h2-color);
+}
+
+span.cm-header.cm-header-3,
+h3 {
+    color: var(--h3-color);
+}
+
+span.cm-header.cm-header-4,
+h4 {
+    color: var(--h4-color);
+}
+
+/*---------------------------------------------------*/
+/*                   二级标题的下划线                   */
+/*---------------------------------------------------*/
+
+/* 编辑状态 */
+.HyperMD-header.HyperMD-header-2.cm-line,
+/* 预览状态 */
+h2 {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--h2-color);
+}
+
+/*---------------------------------------------------*/
+/*                     标题等级提示                    */
+/*---------------------------------------------------*/
+
+/* 编辑状态 */
+span.cm-header:before,
+/* 预览状态 */
+h1:before,
+h2:before,
+h3:before,
+h4:before,
+h5:before,
+h6:before {
+    margin-right: var(--header-before-margin-right);
+    font-size: var(--header-before-size);
+    font-weight: bolder;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 0rem 0.2rem;
+    opacity: 0.7;
+}
+
+/* 编辑和预览状态标题等级提示的内容 */
+span.cm-header.cm-header-1::before,
+h1:before {
+    content: "H 1";
+}
+
+span.cm-header.cm-header-2::before,
+h2:before {
+    content: "H 2";
+}
+
+span.cm-header.cm-header-3::before,
+h3:before {
+    content: "H 3";
+}
+
+span.cm-header.cm-header-4::before,
+h4:before {
+    content: "H 4";
+}
+
+span.cm-header.cm-header-5::before,
+h5:before {
+    content: "H 5";
+}
+
+span.cm-header.cm-header-6::before,
+h6:before {
+    content: "H 6";
+}
+
+/*
+上面的设置会导致在编辑状态下有两个地方出现标题等级提示：
+    - 标题正文前（这是我们所期望的）
+    - 标题语法的 # 号前（这是我们不愿看到的）
+
+所以下面的设置用于隐藏 # 号前的标题等级提示
+ */
+.cm-formatting.cm-formatting-header:before {
+    display: none;
+}

@@ -1,0 +1,20 @@
+/*---------------------------------------------------*/
+/*                    Inline Code                    */
+/*---------------------------------------------------*/
+
+/* 预览状态 */
+span.cm-inline-code {
+  border-radius: var(--radius-s);
+  font-size: var(--code-size);
+  padding: 0.1em 0.25em;
+  background-color: var(--inline-code-background-color) !important;
+}
+
+/* 阅读状态 */
+code:not([class]) {
+  background-color: var(--inline-code-background-color) !important;
+}
+
+/*---------------------------------------------------*/
+/*                    Block Code                     */
+/*---------------------------------------------------*/

@@ -1,0 +1,21 @@
+.theme-dark {
+  --background-primary: #263238;
+  --background-primary-alt: #42414d;
+  --background-secondary: #263238;
+  --background-secondary-alt: #263238;
+  /* --background-primary: #2b2a33;
+    --background-primary-alt: #42414d;
+    --background-secondary: #2b2a33;
+    --background-secondary-alt: #1c1b22; */
+  --tab-background-active: #364147;
+
+  --inline-code-background-color: #42414d88;
+}
+
+.theme-light {
+  --background-primary: #f9f9fb;
+  --background-primary-alt: #f5f2fd;
+  --background-secondary: #f9f9fb;
+
+  --inline-code-background-color: #f5f2fd;
+}

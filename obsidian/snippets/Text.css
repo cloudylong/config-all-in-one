@@ -1,0 +1,21 @@
+/*---------------------------------------------------*/
+/*                      加粗文本                      */
+/*---------------------------------------------------*/
+
+.theme-dark {
+    --bold-color: #7af180;
+}
+
+.theme-light {
+    --bold-color: #00b609;
+}
+
+.markdown-rendered mark,
+.cm-s-obsidian span.cm-formatting-highlight,
+.cm-s-obsidian span.cm-highlight {
+    font-weight: bolder;
+    color: black;
+    background-color: #7af180;
+    border-radius: 3px;
+    padding: 0px 3px;
+}

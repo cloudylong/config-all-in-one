@@ -1,0 +1,60 @@
+/*---------------------------------------------------*/
+/*                       仓库名                       */
+/*---------------------------------------------------*/
+.nav-folder.mod-root > .nav-folder-title {
+    font-size: 1.2em;
+    /* 居中显示 */
+    display: block;
+    text-align: center;
+}
+
+/*---------------------------------------------------*/
+/*                    右侧大纲对齐                     */
+/*---------------------------------------------------*/
+/* 处理有子标题时的图标对齐 */
+.workspace-leaf-content[data-type="outline"]
+    .view-content
+    .outline
+    .tree-item-icon {
+    position: absolute;
+    background: transparent;
+    transform: translate(-2px, -1px);
+}
+.workspace-leaf-content[data-type="outline"]
+    .view-content
+    .outline
+    .collapse-icon
+    svg.svg-icon {
+    width: 11px;
+    height: 20px;
+}
+.workspace-leaf-content[data-type="outline"]
+    .view-content
+    .outline
+    .tree-item-inner {
+    margin-left: 10px;
+}
+.workspace-leaf-content[data-type="outline"]
+    .view-content
+    .outline
+    .tree-item-children {
+    margin-left: 10px;
+    border-radius: 0px;
+}
+
+/*---------------------------------------------------*/
+/*                     右侧标签对齐                    */
+/*---------------------------------------------------*/
+/* 处理有嵌套标签时的图标对齐 */
+.workspace-leaf-content[data-type="tag"] .tree-item-icon {
+    position: absolute;
+    background: transparent;
+    transform: translate(-1px, 0px);
+}
+.workspace-leaf-content[data-type="tag"] .collapse-icon svg.svg-icon {
+    width: 11px;
+    height: 10px;
+}
+.workspace-leaf-content[data-type="tag"] .tree-item-inner {
+    margin-left: 12px;
+}

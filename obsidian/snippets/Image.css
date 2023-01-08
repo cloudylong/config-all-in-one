@@ -1,0 +1,12 @@
+img {
+    /* 圆角 */
+    border-radius: 6px;
+    /* 居中显示 */
+    display: block;
+    margin: 0 auto;
+    /* 背景色填充 
+        加白色填充是因为微信读书中的图片大多都可着边的，在深色主题下不美观且影响边框圆角的显示
+        当然，对于深色背景的截图则需要做出一些妥协*/
+    /* padding: 10px; */
+    background-color: #f9f9fb;
+}

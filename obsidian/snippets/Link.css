@@ -1,0 +1,22 @@
+/*-------------------------------------------------- */
+/*                 去除内部链接的下划线                 */
+/*---------------------------------------------------*/
+
+/* 预览状态 */
+.cm-hmd-internal-link .cm-underline,
+/* 阅读模式 */
+a.internal-link {
+    font-family: "Yuanti SC";
+    text-decoration: none !important;
+}
+
+/*-------------------------------------------------- */
+/*                突出显示无效的内部链接                 */
+/*---------------------------------------------------*/
+
+.is-unresolved,
+a.internal-link.is-unresolved {
+    color: red !important;
+    text-decoration: underline !important;
+    font-weight: bold;
+}

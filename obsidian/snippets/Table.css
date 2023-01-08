@@ -1,0 +1,31 @@
+/* .theme-dark {
+    --table-header-background:hsl(220, 16%, 16%);
+    --table-row-even-background:hsl(220, 16%, 20%);
+    --table-row-odd-background:hsl(220, 16%, 24%);
+    --table-row-background-hover:rgb(76,86,106);
+} */
+
+.theme-dark{
+    --table-border-color:#424958;
+}
+
+.markdown-rendered th {
+    text-align: center;
+    /* background-color: var(--table-header-background) !important; */
+}
+
+/* .markdown-rendered tbody tr:nth-child(even)
+{
+    background-color: var(--table-row-even-background) !important;
+}
+
+.markdown-rendered tbody tr:nth-child(odd)
+{
+    background-color: var(--table-row-odd-background) !important;
+}
+
+.markdown-rendered tbody tr:nth-child(even):hover,
+.markdown-rendered tbody tr:nth-child(odd):hover
+{
+    background-color: var(--table-row-background-hover) !important;
+} */
