@@ -1,0 +1,12 @@
+body {
+  /* 预定义变量：阅读模式 */
+  --blockquote-font-style: italic;
+}
+
+/* 预览模式 */
+.cm-s-obsidian span.cm-quote,
+blockquote {
+  color: var(--blockquote-color);
+  font-family: "Maple Mono", "Hannotate SC";
+  font-style: italic;
+}
